@@ -14,8 +14,8 @@ void kernel_main() {
 	struct list_element d={NULL,8};
 	struct list_element e={NULL,16};
 
-	list_add(NULL,&d);
-	list_add(&b,&e);
+	list_add(NULL,&d); //add d to the front of the list
+	list_add(&b,&e); // add e behind b
 	struct list_element *t=NULL;
 
 	list_remove(&e);

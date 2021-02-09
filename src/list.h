@@ -6,7 +6,7 @@
 /*
 head is the pointer using in list_add() and list_remove()
 */
-struct list_element *head;
+extern struct list_element *head;
 
 struct list_element{
 	struct list_element *next;

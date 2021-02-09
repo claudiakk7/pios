@@ -1,10 +1,12 @@
-
 #include "list.h"
 
+struct list_element *head;
 
 /*a new_element is added behind the list_head
 
 if a new element is adding to the front of the list, then list_head = NULL*/
+
+
 
 void list_add(struct list_element *list_head, struct list_element *new_element){
 
@@ -20,7 +22,7 @@ void list_add(struct list_element *list_head, struct list_element *new_element){
 
 	p=head;
 
-	for (;p!=list_head;p=p->next)//looking for the pointer's position
+	for (;p!=list_head;p=p->next)
 	{
 	
 	}
@@ -38,7 +40,7 @@ void list_remove(struct list_element *element){
 	p_first=head;
 	p=head;
 
-	for (;p!=element;p=p->next)//looking for position
+	for (;p!=element;p=p->next)
 	{
 		p_first=p;
 	}
