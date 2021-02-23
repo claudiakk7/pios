@@ -1,4 +1,5 @@
 #include "list.h"
+#include "led.h"
 
 void clean_bss(void);
 
@@ -6,6 +7,7 @@ void kernel_main() {
 
 	clean_bss();
 		
+	/*
 	struct list_element c={NULL,3};
 	struct list_element b={&c,2};
 	struct list_element a={&b,1};
@@ -16,11 +18,20 @@ void kernel_main() {
 
 	list_add(NULL,&d); //add d to the front of the list
 	list_add(&b,&e); // add e behind b
-	struct list_element *t=NULL;
+
 
 	list_remove(&e);
+	*/
+	
+	led_init();
 
     while(1){
+		
+		led_on();
+		delay();
+		led_off();
+		delay();
+				
     }
 	
 	
