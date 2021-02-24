@@ -23,17 +23,6 @@ void led_off()
 }
 
 
-void delay()
-{
-	unsigned int n=0x100000;
-    while(n)
-    {
-        n--;
-    }
-}
-
-
-
 
 
 

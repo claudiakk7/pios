@@ -1,5 +1,6 @@
 #include "list.h"
 #include "led.h"
+#include "delay.h"
 
 void clean_bss(void);
 
@@ -28,9 +29,9 @@ void kernel_main() {
     while(1){
 		
 		led_on();
-		delay();
+		delay_ms(1000);
 		led_off();
-		delay();
+		delay_ms(1000);
 				
     }
 	
