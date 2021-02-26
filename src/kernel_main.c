@@ -1,6 +1,8 @@
 #include "list.h"
 #include "led.h"
 #include "delay.h"
+#include "rprintf.h"
+#include "serial.h"
 
 void clean_bss(void);
 
@@ -32,6 +34,7 @@ void kernel_main() {
 		delay_ms(1000);
 		led_off();
 		delay_ms(1000);
+		esp_printf(put_c, "Current Execution Level is %d\r\n", getEL());
 				
     }
 	

@@ -18,6 +18,8 @@ OBJS = \
 	list.o \
 	led.o \
 	delay.o \
+	rprintf.o \
+	serial.o \
 
 
 

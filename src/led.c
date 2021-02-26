@@ -8,7 +8,9 @@ uint32_t *gpclr1 = 0xFE20002C;
 
 void led_init()
 {
-   *gpfsel4 &= ~(0b111<<6);/* set bits 8-6 to 000 and other remains */
+	unsigned int mask_number=0xFFFFFE3F;
+	
+   *gpfsel4 &= mask_number;/* set bits 8-6 000 and other bits unchanged */
    *gpfsel4 |= (0b001<<6);/* set bits 8-6 to 001 and other remains */
 }
 
